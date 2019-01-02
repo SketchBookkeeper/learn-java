@@ -6,6 +6,7 @@
 .idea
 .gradle
 build/
+out/
 .navigation
 captures/
 output.json
