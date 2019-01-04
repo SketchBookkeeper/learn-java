@@ -21,6 +21,14 @@ public class Hello {
         // Java will convert 2 to an int
         // Unless we use type casting. (byte)
         byte divided = (byte)(myByte/2);
+
+        // float width of 32 (4 bytes)
+        float floatValue = 5.6f;
+        // append f to end or type cast with (float)
+
+        // double width of 64 (8 bytes)
+        double doubleValue = 5d;
+        
     }
 
 }
