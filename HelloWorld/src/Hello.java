@@ -4,6 +4,8 @@ public class Hello {
 
         System.out.println("Hello World!");
 
+        // Primitive Data Types
+
         // int width of 32
         int minValue = -2_147_483_647;
         int maxValue = 2_147_483_647;
@@ -18,7 +20,7 @@ public class Hello {
         long longValue = 10000000L;
 
         // Type Casting
-        // Java will convert 2 to an int
+        // Java will convert 2 to Îan int
         // Unless we use type casting. (byte)
         byte divided = (byte)(myByte/2);
 
@@ -28,7 +30,14 @@ public class Hello {
 
         // double width of 64 (8 bytes)
         double doubleValue = 5d;
-        
+
+        char letter = 'a';
+
+        // https://unicode-table.com/en
+        char myChar = '\u00a2';
+
+        System.out.print(myChar);
+
     }
 
 }
