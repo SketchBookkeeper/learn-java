@@ -16,6 +16,11 @@ public class Hello {
 
         // long has a width of 64
         long longValue = 10000000L;
+
+        // Type Casting
+        // Java will convert 2 to an int
+        // Unless we use type casting. (byte)
+        byte divided = (byte)(myByte/2);
     }
 
 }
