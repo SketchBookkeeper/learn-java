@@ -2,8 +2,6 @@ public class Hello {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello World!");
-
         // Primitive Data Types
 
         // int width of 32
@@ -36,7 +34,9 @@ public class Hello {
         // https://unicode-table.com/en
         char myChar = '\u00a2';
 
-        System.out.print(myChar);
+        // String is not a primitive,
+        // it's a class
+        String myString = "This is my string.";
 
     }
 
