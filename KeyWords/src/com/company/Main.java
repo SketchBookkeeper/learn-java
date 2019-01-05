@@ -13,5 +13,12 @@ public class Main {
             System.out.println("Hello World");
         }
 
+        // Entire line is a statement
+        int number = 9;
+        System.out.println("Statement");
+        System.out.println("this" +
+                "is a statement" +
+                "as well");
+
     }
 }
