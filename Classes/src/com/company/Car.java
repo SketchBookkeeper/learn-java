@@ -9,6 +9,22 @@ public class Car {
     private String engine;
     private String color;
 
+    // Constructor
+    public Car() {
+        // Calling another constructor within another
+        // constructor. Must be first line in
+        // constructor.
+        this(4, 4); // Some Defaults.
+
+        System.out.println("empty constructor");
+    }
+
+    // Constructors can be overloaded
+    public Car(int doors, int wheels) {
+        this.doors = doors;
+        this.wheels = wheels;
+    }
+
     // Setter
     public void setModel(String model) {
 
