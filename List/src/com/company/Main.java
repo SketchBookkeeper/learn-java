@@ -18,6 +18,8 @@ public class Main {
 
         removeItem(2);
         printList();
+
+        System.out.println(findItem("Bread"));
     }
 
     // Add
@@ -35,6 +37,20 @@ public class Main {
         list.remove(position);
     }
 
+    // Find
+    public static String findItem(String searchItem) {
+        // boolean exists = list.contains(searchItem);
+
+        int position = list.indexOf(searchItem);
+
+        if (position >= 0) {
+            return list.get(position);
+        }
+
+        return null;
+    }
+
+    // Print the list
     public static void printList() {
         System.out.println("You have " + list.size() + " items in the list.");
 
