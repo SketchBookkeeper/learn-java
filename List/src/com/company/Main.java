@@ -7,10 +7,10 @@ public class Main {
     private static ArrayList<String> list = new ArrayList<String>();
 
     public static void main(String[] args) {
-        addtoList("Milk");
-        addtoList("Bread");
-        addtoList("Butter");
-        addtoList("Cream Cheese");
+        addToList("Milk");
+        addToList("Bread");
+        addToList("Butter");
+        addToList("Cream Cheese");
         printList();
 
         modifyItem(0, "Almond Milk");
@@ -23,7 +23,7 @@ public class Main {
     }
 
     // Add
-    public static void addtoList(String item) {
+    public static void addToList(String item) {
         list.add(item);
     }
 
