@@ -15,11 +15,11 @@ public class Branch {
 	}
 
 	public void addCustomer(String name, double amount) {
-		customers.add(new Customer(name, amount));
+		this.customers.add(new Customer(name, amount));
 	}
 
 	private int searchForCustomer(String name) {
-		for(int i = 0; i < customers.size(); i++) {
+		for(int i = 0; i < this.customers.size(); i++) {
 			Customer customer = customers.get(i);
 			if (customer.getName().equals(name)) {
 				return i;
@@ -36,7 +36,7 @@ public class Branch {
 			return -1;
 		}
 
-		if(customers.get(customerIndex).processTransaction(amount) == -0) {
+		if (this.customers.get(customerIndex).processTransaction(amount) == -0) {
 			return -1;
 		}
 
@@ -44,13 +44,13 @@ public class Branch {
 	}
 
 	public void listCustomers() {
-		for(Customer customer : customers) {
+		for (Customer customer : this.customers) {
 			System.out.println(customer.getName());
 		}
 	}
 
 	public void listCustomers(boolean showTransactions) {
-		for(Customer customer : customers) {
+		for (Customer customer : this.customers) {
 			System.out.println(customer.getName());
 			if (showTransactions) {
 				customer.listTransactions();

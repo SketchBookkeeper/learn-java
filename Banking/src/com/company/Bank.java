@@ -6,12 +6,12 @@ public class Bank {
 	private ArrayList<Branch> branches = new ArrayList<>();
 
 	public void addBranch(String name) {
-		branches.add(new Branch(name));
+		this.branches.add(new Branch(name));
 	}
 
 	private int searchForBranch(String name) {
-		for(int i = 0; i < branches.size(); i++) {
-			if (branches.get(i).getName().equals(name)) {
+		for(int i = 0; i < this.branches.size(); i++) {
+			if (this.branches.get(i).getName().equals(name)) {
 				return i;
 			}
 		}
@@ -36,7 +36,7 @@ public class Bank {
 			return -1;
 		}
 
-		branches.get(branchIndex).addCustomer(customerName, amount);
+		this.branches.get(branchIndex).addCustomer(customerName, amount);
 
 		return 0;
 	}
@@ -48,7 +48,7 @@ public class Bank {
 			return -1;
 		}
 
-		Branch branchObject = branches.get(branchIndex);
+		Branch branchObject = this.branches.get(branchIndex);
 
 		if (branchObject.processTransaction(customerName, amount) != 0) {
 			return -1;
@@ -64,7 +64,7 @@ public class Bank {
 			return -1;
 		}
 
-		branches.get(branchIndex).listCustomers();
+		this.branches.get(branchIndex).listCustomers();
 
 		return 0;
 	}
@@ -76,7 +76,7 @@ public class Bank {
 			return -1;
 		}
 
-		branches.get(branchIndex).listCustomers(showTransactions);
+		this.branches.get(branchIndex).listCustomers(showTransactions);
 
 		return 0;
 	}

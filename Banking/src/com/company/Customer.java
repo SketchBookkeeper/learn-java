@@ -23,7 +23,7 @@ public class Customer {
 			return -1;
 		}
 
-		transactions.add(amount);
+		this.transactions.add(amount);
 
 		return 0;
 	}
@@ -31,8 +31,8 @@ public class Customer {
 	public double getBalance() {
 		double balance = 0;
 
-		for(int i = 0; i < transactions.size(); i++) {
-			balance += transactions.get(i).doubleValue();
+		for(int i = 0; i < this.transactions.size(); i++) {
+			balance += this.transactions.get(i).doubleValue();
 		}
 
 		return  balance;
@@ -41,7 +41,7 @@ public class Customer {
 	public void listTransactions() {
 		double total = 0;
 
-		for(Double transaction : transactions) {
+		for(Double transaction : this.transactions) {
 			double transactonAmount = transaction.doubleValue();
 			total += transactonAmount;
 			System.out.println(transactonAmount);
