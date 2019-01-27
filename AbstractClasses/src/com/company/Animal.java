@@ -13,6 +13,8 @@ public abstract class Animal {
         this.name = name;
     }
 
+    // Methods and fields defined as abstract
+    // must be have override in sub class
     public abstract void eat();
     public abstract void breathe();
 

@@ -5,8 +5,6 @@ public class Dog extends Animal {
         super(name);
     }
 
-    // Methods and fields defined as abstract
-    // must be have override in sub class
     @Override
     public void eat() {
 
