@@ -9,6 +9,8 @@ package com.company;
 public abstract class Animal {
     private String name;
 
+    // Abstract classes can have constructors,
+    // while an interface cannot.
     public Animal(String name) {
         this.name = name;
     }
